@@ -1,0 +1,1 @@
+SELECT * FROM {{ ref('emp_stg') }}

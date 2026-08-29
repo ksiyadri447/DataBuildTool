@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('src', 'CUST_ORDERS_DTLS') }}

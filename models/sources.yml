@@ -1,0 +1,17 @@
+sources:
+  - name: src
+    database: DBT_DEV_DB
+    schema: RAW_SCHEMA
+    tables:
+      - name: ORDERS
+      - name: ORDERS_DTLS
+      - name: CUST_ORDERS_DTLS
+  - name: src2
+    database: DBT_DEV_DB
+    schema: SC
+    tables:
+      - name: EMPLOYEE_T
+      - name: CUSTOMER_AUDIT
+      - name: SALES_DETAILS
+      - name: CUSTOMERSSNAP
+      - name: CUSTOMER_CHECK
