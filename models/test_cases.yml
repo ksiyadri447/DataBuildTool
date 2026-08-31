@@ -5,11 +5,24 @@ models:
         tests:
           - not_null
           - unique
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3]
+
   - name: sales1_mdl
     columns:
       - name: id
         tests:
           - not_null
           - unique
-          - accepted_values:
-              arguments: ['1','2','3']
+          - validate_email
+
+  - name: expect_length
+    columns:
+      - name: phone
+        tests:
+          - not_null
+          - unique
+          - dbt_expectations.expect_column_value_lengths_to_equal:
+              arguments:
+                value: 10
