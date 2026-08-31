@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('src2', 'SALES1') }}

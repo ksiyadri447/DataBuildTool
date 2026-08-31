@@ -14,4 +14,8 @@ sources:
       - name: CUSTOMER_AUDIT
       - name: SALES_DETAILS
       - name: CUSTOMERSSNAP
-      - name: CUSTOMER_CHECK
+      - name: CUSTOMER_CHECK 
+      - name: SALES22
+      - name: SALES1
+
+
