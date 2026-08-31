@@ -6,10 +6,6 @@
 
         pre_hook=[
             "{{ use_warehouse('COMPUTE_WH') }}"
-        ],
-
-        post_hook=[
-            "{{suspend_warehouse('COMPUTE_WH')}}"
         ]
     )
 }}
