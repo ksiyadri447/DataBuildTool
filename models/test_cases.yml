@@ -1,0 +1,15 @@
+models:
+  - name: sales1_stg
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+  - name: sales1_mdl
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              arguments: ['1','2','3']
