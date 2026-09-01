@@ -1,0 +1,1 @@
+{{ codegen.generate_source(schema_name= 'SC', database_name= 'DBT_DEV_DB') }}
